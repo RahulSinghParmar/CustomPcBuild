@@ -8,11 +8,17 @@ Project : Custom Personal Computer Builder
 
 package Build;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class MainMenu {
 
     private static int mainMenu;
+
+    public static int getMainMenu() {
+        return mainMenu;
+    }
 
     public static void main(String [] args) {
         printBanner();
@@ -25,14 +31,12 @@ public class MainMenu {
 
         do{
             System.out.println("Please enter a number from the menu. ");
-            System.out.println("Menu: ");
             System.out.println("");
-            System.out.println("1. Add");
-            System.out.println("2. Remove");
-            System.out.println("3. Exit");
-            System.out.println("4. dadad");
-            System.out.println("5. dsafsfw");
-            System.out.println("Enter your choice: ");
+            System.out.println(" [1] Express Builder: A build will be created by the program based on your preferences(for new user). ");
+            System.out.println(" [2] Custom Builder: A build created by the parts you manually SELECT (for advanced users). ");
+            System.out.println(" [3] Random Build: A build will be randomly generated.");
+            System.out.println(" [4] PC Building Glossary: Brief information about each PC part and what it does. ");
+            System.out.println(" [5] Quit Builder program");
 
             mainMenu = mainInput.nextInt();
 
@@ -51,9 +55,12 @@ public class MainMenu {
                 case 4:
                     dasd();
                     break;*/
-                default:
-                    System.out.println("Invalid choice");
+                case 5:
+                    System.out.println("Thanks for using this program! ☺");
                     break;
+                default:
+                    System.out.println("Please enter a valid option from the menu. ");
+                    System.out.println();
             }
         }
         while (mainMenu != 2);
@@ -72,18 +79,25 @@ public class MainMenu {
 
     private static void currentDateFormat()
     {
-        System.out.println("Current Date: " + new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date()));
+        Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        System.out.println("Today is : " + dateFormat.format(currentDate));
     }
 
     /*private static void ExpressPC_Menu()
     {
         ExpressBuilder.ExpressPC_type();
-        ExpressBuilder.ExpressPC_budeget();
+        ExpressBuilder.ExpressPC_budget();
         ExpressBuilder.ExpressPC_windows();
         ExpressBuilder.ExpressPC_tax();
         ExpressBuilder.ExpressPC_print();
-    }*/
+    }
 
+    public static void RandomPC_Menu()
+    {
+
+
+    }*/
 
 }
 
