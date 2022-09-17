@@ -44,17 +44,17 @@ public class MainMenu {
             {
                 case 1:
                     System.out.println("Enter your choice");
-                    //ExpressPC_Menu();
+                    ExpressPC_Menu();
                     break;
                 case 2:
                     System.out.println("Custom Pc Builder");
                     break;
-                /*case 3:
-                    Expdada();
+                case 3:
+                    RandomPC_Menu();
                     break;
                 case 4:
-                    dasd();
-                    break;*/
+                    Glossary.Glossaryinfo();
+                    break;
                 case 5:
                     System.out.println("Thanks for using this program! ☺");
                     break;
@@ -63,7 +63,7 @@ public class MainMenu {
                     System.out.println();
             }
         }
-        while (mainMenu != 2);
+        while (mainMenu != 5);
     }
 
 
@@ -84,7 +84,7 @@ public class MainMenu {
         System.out.println("Today is : " + dateFormat.format(currentDate));
     }
 
-    /*private static void ExpressPC_Menu()
+    private static void ExpressPC_Menu()
     {
         ExpressBuilder.ExpressPC_type();
         ExpressBuilder.ExpressPC_budget();
@@ -95,9 +95,8 @@ public class MainMenu {
 
     public static void RandomPC_Menu()
     {
-
-
-    }*/
-
+        RandomBuilder.randomBuildStart();
+        ExpressPC_Menu();
+    }
 }
 
