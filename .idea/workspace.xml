@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="569bf05d-990d-45ec-b36f-dc86be17a73f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/Glossary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/Glossary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Build/PC_Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/PC_Types.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,7 @@
       <workItem from="1663394331031" duration="597000" />
       <workItem from="1663427633632" duration="75000" />
       <workItem from="1663427951448" duration="10513000" />
-      <workItem from="1663469124294" duration="6532000" />
+      <workItem from="1663469124294" duration="10172000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663160459195</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663472472055</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added new class name glossary , to get the detail information about hardware.">
+      <created>1663477234479</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663477234479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added main menu" />
     <MESSAGE value="Added a class file RandomBuilder and interface class called PC_type for pc equpment details and fixed some PCbuild error ,..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a class file RandomBuilder and interface class called PC_type for pc equpment details and fixed some PCbuild error ,..." />
+    <MESSAGE value="added new class name glossary , to get the detail information about hardware." />
+    <option name="LAST_COMMIT_MESSAGE" value="added new class name glossary , to get the detail information about hardware." />
   </component>
 </project>
