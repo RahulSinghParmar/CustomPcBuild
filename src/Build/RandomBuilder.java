@@ -21,7 +21,7 @@ class RandomBuilder
 
     double randomWithRange(double min, double max)
     {
-        double range = (min - max) + 1;
+        double range = (max - min) + 1;
         return (Math.random() * range) + min;
     }
 

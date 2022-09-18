@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="569bf05d-990d-45ec-b36f-dc86be17a73f" name="Changes" comment="added all the hardware details and price in the PC_Type">
+    <list default="true" id="569bf05d-990d-45ec-b36f-dc86be17a73f" name="Changes" comment="fix the access spicifier and bills arrangements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/CustomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/CustomBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/Glossary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/Glossary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Build/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Build/PC_Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/PC_Types.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/PartsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/PartsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Build/RandomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/RandomBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,23 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "Y:/JAVA/oops/CustomPC_Builder-master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Y:/JAVA/oops/CustomPC_Builder-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Build" />
@@ -107,7 +104,9 @@
       <workItem from="1663394331031" duration="597000" />
       <workItem from="1663427633632" duration="75000" />
       <workItem from="1663427951448" duration="10513000" />
-      <workItem from="1663469124294" duration="25243000" />
+      <workItem from="1663469124294" duration="28303000" />
+      <workItem from="1663525141525" duration="460000" />
+      <workItem from="1663526620544" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663160459195</created>
@@ -165,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663487364366</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix the access spicifier and bills arrangements">
+      <created>1663497525975</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663497525975</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +223,8 @@
     <MESSAGE value="added new class name glossary , to get the detail information about hardware." />
     <MESSAGE value="added types of pc functions and printing bill at last" />
     <MESSAGE value="added all the hardware details and price in the PC_Type" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all the hardware details and price in the PC_Type" />
+    <MESSAGE value="fix the access spicifier and bills arrangements" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the access spicifier and bills arrangements" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CustomPcBuild$MainMenu.ic" NAME="MainMenu Coverage Results" MODIFIED="1663492078202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

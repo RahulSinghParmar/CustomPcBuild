@@ -71,7 +71,7 @@ public class ExpressBuilder extends RandomBuilder
 
         if (MainMenu.getMainMenu() == 3)
         {
-            double userBudget = give.randomWithRange(40000.00, 500000.00);
+            double userBudget = give.randomWithRange(50000.00, 400000.00);
             ExpressBuilder.setUserBudget(userBudget);
         }
         else {
@@ -83,7 +83,7 @@ public class ExpressBuilder extends RandomBuilder
 
                 double userBudget = expressInput.nextDouble();
                 ExpressBuilder.setUserBudget(userBudget);
-                while (userBudget > 100000 || userBudget < 40000)
+                while (userBudget > 100000 || userBudget < 50000)
                 {
                     System.out.println("Please enter a valid amount.");
                     userBudget = expressInput.nextDouble();

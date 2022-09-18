@@ -3,7 +3,6 @@ Name    : Rahul Singh Parmar
 email   : rahulsinghparmar4@gmail.com
 Project : Custom Personal Computer Builder
 */
-// --------------------------------------------------------------
 
 
 package Build;
@@ -67,10 +66,10 @@ public class MainMenu {
 
     public static void printBanner()
     {
-        System.out.println("╔═══════════════════════════════════╗");
-        System.out.println("║          𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 Rahul's       ║");
-        System.out.println("║          𝗖𝘂𝘀𝘁𝗼𝗺 𝗣𝗖 𝗕𝘂𝗶𝗹𝗱𝗲𝗿          ║");
-        System.out.println("╚═══════════════════════════════════╝");
+        System.out.println("          ╔═══════════════════════════════════╗     ");
+        System.out.println("          ║          𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 Rahul's       ║     ");
+        System.out.println("          ║          𝗖𝘂𝘀𝘁𝗼𝗺 𝗣𝗖 𝗕𝘂𝗶𝗹𝗱𝗲𝗿          ║     ");
+        System.out.println("          ╚═══════════════════════════════════╝     ");
         currentDateFormat();
         System.out.println();
     }
@@ -78,7 +77,7 @@ public class MainMenu {
     public static void currentDateFormat()
     {
         Date currentDate = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         System.out.println("Today is : " + dateFormat.format(currentDate));
     }
 

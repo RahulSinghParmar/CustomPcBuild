@@ -386,7 +386,7 @@ interface PC_Types {
             if (ExpressBuilder.getUserWindows().equalsIgnoreCase("Y"))
             {
                 OSname = "Windows 10 PRO 64-bit";
-                OScost = 2900.99;
+                OScost = 2900.49;
             }
             else
             {
