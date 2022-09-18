@@ -82,7 +82,7 @@ public class ExpressBuilder extends RandomBuilder
             if (getUserType() == 1)
             {
                 System.out.println("2. What is your maximum budget in Rupees before shipping and taxes? " +
-                        "Enter a number from ₹40,000 to ₹5,00,000. ");
+                        "Enter a number from ₹ 50,000 to ₹ 5,00,000. ");
                 System.out.println();
 
                 double userBudget = expressInput.nextDouble();
@@ -96,12 +96,12 @@ public class ExpressBuilder extends RandomBuilder
             }
             else {
                 System.out.println("2. What is your maximum budget in Rupees before shipping and taxes? " +
-                        "Enter a number from ₹40,000 to ₹5,00,000.");
+                        "Enter a number from ₹ 50,000 to ₹ 5,00,000.");
                 System.out.println();
 
                 double userBudget = expressInput.nextDouble();
                 ExpressBuilder.setUserBudget(userBudget);
-                while (userBudget > 500000 || userBudget < 40000) {
+                while (userBudget > 500000 || userBudget < 50000) {
                     System.out.println("Please enter a valid amount.");
                     userBudget = expressInput.nextDouble();
                     ExpressBuilder.setUserBudget(userBudget);
