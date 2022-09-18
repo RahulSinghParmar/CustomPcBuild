@@ -11,12 +11,12 @@ public class Glossary
 
         do {
             System.out.println("This is the PC Building Glossary. Enter a number to select the topic you want to learn about. ");
-            System.out.println("[1] Processor (CPU)");
-            System.out.println("[2] Motherboard (Board)");
-            System.out.println("[3] Memory (RAM)");
-            System.out.println("[4] Video Card/Graphics Card (GPU)");
-            System.out.println("[5] Power Supply (PSU)");
-            System.out.println("[6] Quit and return to the Main Menu");
+            System.out.println("[1] Processor (CPU) ");
+            System.out.println("[2] Motherboard (Board) ");
+            System.out.println("[3] Memory (RAM) ");
+            System.out.println("[4] Video Card/Graphics Card (GPU) ");
+            System.out.println("[5] Power Supply (PSU) ");
+            System.out.println("[6] Quit and return to the Main Menu ");
             glossMenu = input.nextInt();
 
             switch (glossMenu) {
@@ -36,10 +36,11 @@ public class Glossary
                     System.out.println("PSU Info \n");
                     break;
                 case 6:
-                    System.out.println("Quit and Return to the Main Menu \n");
+                    System.out.println("Quit and Return to the Main Menu!!  \n");
                     break;
                 default:
-                    throw new IllegalStateException("Unexpected value: \n" + glossMenu);
+                    System.out.println("Please enter a valid option from the menu. \n");
+                    break;
             }
         }
         while (glossMenu != 6);

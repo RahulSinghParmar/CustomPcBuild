@@ -20,34 +20,32 @@ public class MainMenu {
         return mainMenu;
     }
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         printBanner();
         printMenu();
     }
 
-    private static void printMenu()
+    public static void printMenu()
     {
-        Scanner mainInput = new Scanner (System.in);
+        Scanner mainInput = new Scanner(System.in);
 
         do{
             System.out.println("Please enter a number from the menu. ");
-            System.out.println("");
-            System.out.println(" [1] Express Builder: A build will be created by the program based on your preferences(for new user). ");
-            System.out.println(" [2] Custom Builder: A build created by the parts you manually SELECT (for advanced users). ");
-            System.out.println(" [3] Random Build: A build will be randomly generated.");
-            System.out.println(" [4] PC Building Glossary: Brief information about each PC part and what it does. ");
-            System.out.println(" [5] Quit Builder program");
+            System.out.println();
+            System.out.println("[1] Express Builder: A build will be created by the program based on your preferences(for new user). ");
+            System.out.println("[2] Custom Builder: A build created by the parts you manually SELECT (for advanced users). ");
+            System.out.println("[3] Random Build: A build will be randomly generated.");
+            System.out.println("[4] PC Building Glossary: Brief information about each PC part and what it does. ");
+            System.out.println("[5] Quit Builder program ");
 
             mainMenu = mainInput.nextInt();
 
-            switch (mainMenu)
-            {
+            switch (mainMenu) {
                 case 1:
-                    System.out.println("Enter your choice");
                     ExpressPC_Menu();
                     break;
                 case 2:
-                    System.out.println("Custom Pc Builder");
+                    System.out.println("Custom Pc Builder ");
                     break;
                 case 3:
                     RandomPC_Menu();
@@ -56,7 +54,7 @@ public class MainMenu {
                     Glossary.Glossaryinfo();
                     break;
                 case 5:
-                    System.out.println("Thanks for using this program! ☺");
+                    System.out.println("Thanks for using this program! ☺ ");
                     break;
                 default:
                     System.out.println("Please enter a valid option from the menu. ");
@@ -77,14 +75,14 @@ public class MainMenu {
         System.out.println();
     }
 
-    private static void currentDateFormat()
+    public static void currentDateFormat()
     {
         Date currentDate = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         System.out.println("Today is : " + dateFormat.format(currentDate));
     }
 
-    private static void ExpressPC_Menu()
+    public static void ExpressPC_Menu()
     {
         ExpressBuilder.ExpressPC_type();
         ExpressBuilder.ExpressPC_budget();

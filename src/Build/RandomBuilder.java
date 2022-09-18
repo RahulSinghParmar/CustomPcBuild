@@ -2,7 +2,7 @@ package Build;
 
 import java.util.Scanner;
 
-public class RandomBuilder
+class RandomBuilder
 {
     private static int randomStartKey;
     public static int getRandomStartKey() {
@@ -12,10 +12,17 @@ public class RandomBuilder
         randomStartKey = randomStartNum;
     }
 
-    int randomWithRange(double min, double max)
+    int randomWithRange(int min, int max)
+    {
+        //max = 3 and min = 2 always
+        int range = (max - min) + 1;
+        return (int) (Math.random() * range) + min;
+    }
+
+    double randomWithRange(double min, double max)
     {
         double range = (min - max) + 1;
-        return (int) (min + (Math.random() * range));
+        return (Math.random() * range) + min;
     }
 
     public static void  randomBuildStart()
@@ -26,7 +33,7 @@ public class RandomBuilder
 
         int randomStartKey = randomInput.nextInt();
         setRandomStartKey(randomStartKey);
-        while (randomStartKey != 8 )
+        while (randomStartKey != 8)
         {
             System.out.println("Please enter the correct menu option. ");
             randomStartKey = randomInput.nextInt();
