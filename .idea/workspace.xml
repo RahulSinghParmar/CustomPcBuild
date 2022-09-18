@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569bf05d-990d-45ec-b36f-dc86be17a73f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Build/PC_Types.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/Glossaryinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/Glossary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Build/RandomBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/RandomBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/ExpressBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Build/Glossary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Build/Glossary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <workItem from="1663394331031" duration="597000" />
       <workItem from="1663427633632" duration="75000" />
       <workItem from="1663427951448" duration="10513000" />
-      <workItem from="1663469124294" duration="3097000" />
+      <workItem from="1663469124294" duration="6532000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663160459195</created>
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663439104708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added a class file RandomBuilder and interface class called PC_type for pc equpment details and fixed some PCbuild error ,...">
+      <created>1663472472055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663472472055</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +187,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main menu" />
+    <MESSAGE value="Added a class file RandomBuilder and interface class called PC_type for pc equpment details and fixed some PCbuild error ,..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a class file RandomBuilder and interface class called PC_type for pc equpment details and fixed some PCbuild error ,..." />
   </component>
 </project>
