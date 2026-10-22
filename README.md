@@ -1,64 +1,97 @@
-<h1 align="center"><img align="center" src="https://user-images.githubusercontent.com/64122408/118642285-c8965580-b7f8-11eb-9838-b1780fbc7dbc.png" height=50px width=50px>&emsp;PC Build</h1>
-<br/>
+# Custom PC Build
 
-<div align="center">
+[![Java CI](https://github.com/RahulSinghParmar/CustomPcBuild/actions/workflows/ci.yml/badge.svg)](https://github.com/RahulSinghParmar/CustomPcBuild/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/RahulSinghParmar/CustomPcBuild)](https://github.com/RahulSinghParmar/CustomPcBuild/releases)
+[![MIT license](https://img.shields.io/github/license/RahulSinghParmar/CustomPcBuild)](LICENSE)
 
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mr-anonymous-official/PC-Build/blob/master/LICENSE)&emsp;&emsp;
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)&emsp;&emsp;
+A Java console application for exploring compatible PC configurations within a tax-inclusive budget. Built by Rahul Singh Parmar, evolving an introductory Java coursework project into a tested application.
 
-</div>
-<br/>
+## Download and run
 
-<h1 align="center"><b>What's This? :brain:</b></h1>
-<br/>
+Install Java 17 or newer, download `custompcbuild-1.0.0.jar` from [Releases](https://github.com/RahulSinghParmar/CustomPcBuild/releases/latest), then run:
 
-# Custom PC Build 
+```sh
+java -jar custompcbuild-1.0.0.jar
+```
 
-## Intro
+Use `--demo` for an example quote without prompts, or `--version` to print the version. No runtime libraries, account, network connection, Maven or Gradle installation is required.
 
-This is my basic project so far in Java. It was a long project for my Intro to Programming course and required me to apply everything I learned from the beginning. The assignment was to create an application that would meet all the listed criteria and be grand in scope. The expectation was to build an application that was functioning and free of errors, but it did not necessarily have to be a finished product. This allowed me to create a program with a strong foundation of OOP and also left room for further improvements that can be revisited in the future.
+## Features
 
-## Criteria Checklist
+- **Express builder:** recommends a configuration for office, gaming or editing use.
+- **Custom builder:** choose every component and get compatibility/budget feedback.
+- **Random builder:** explores compatible configurations for your purpose and budget.
+- **Compatibility checks:** CPU socket, RAM generation, motherboard/case size, integrated graphics availability, and estimated PSU load with 25% headroom.
+- **Accurate totals:** decimal INR prices and a maximum budget that includes configurable tax.
+- **CSV export:** saves a valid quote to a new file; existing files are never overwritten.
+- **Glossary and input recovery:** component explanations, validated prompts and graceful EOF handling.
 
-> 1. Scanner Class
-> 2. Variables and Constant 
-> 3. Switch Statements
-> 4. Conditional Statements and Operators
-> 5. Operators (logical,arithmetic, assignment)
-> 6. Sting Class method 
-> 7. Math Class Method 
-> 8. Loop 
-> 9. Method Passing Arguments by Values 
-> 10. Method Overloading 
-> 11. Array Methods 
-> 12. Method Overriding 
-> 13. Add Multiple Class 
-> 14. Create an Object 
-> 15. Constructor 
-> 16. Using java inbuilt Libraries such as scanner , Random, date etc 
-> 17. Println and printf 
-> 18. using .this and this() 
+The catalog contains 17 illustrative entries. Prices are demo data, **not current retailer offers**. Enter tax `0` for tax-inclusive prices. OS licenses, peripherals, shipping and assembly are excluded. Catalog CPUs include stock coolers.
 
-I used KanbanFlow, a workflow management tool, to help organize and monitor my progress throughout the project pipeline. Although I worked individually in creating this application, I still found KanbanFlow to be a very useful way to keep myself in check despite it usually being used for group projects.
+## Build and test
 
-<h1 align="center"><b>Important Note? :notebook:</b></h1>
+Use a **full JDK 17+**, including the Java compiler and JAR tool:
 
-## Future Improvements
+```sh
+git clone https://github.com/RahulSinghParmar/CustomPcBuild.git
+cd CustomPcBuild
+java Build.java
+java -jar build/custompcbuild-1.0.0.jar --demo
+```
 
-* Finish Custom PC Builder Class
-* Finish Glossary Class 
-* Add more PC parts such as peripherals, monitors, fans, and other accessories 
-* Develop a way to dynamically retrieve prices from retailers such as Amazon, BestBuy, and NewEgg (SQL)
-* Ability to create a build based on a specific game such as Fortnite, CS:GO, and COD: Warzone
+The same commands work in Windows PowerShell, macOS and Linux. The build compiles for Java 17, runs dependency-free regression tests, and packages application classes plus the license into a runnable JAR. CI checks all three operating systems on JDK 17 and 21.
 
+## Use the builder
 
+1. Choose Express, Custom or Random.
+2. Enter a maximum total budget in INR and a tax percentage, each with up to two decimal places.
+3. Choose a purpose, or select one component in each category.
+4. Review your quote or compatibility feedback. Try another budget/purpose if no recommendation fits.
+5. Enter a new CSV file path to export, or press Enter to skip.
 
-## Feel free to fork This Project😇
+Custom selections are checked after all seven choices; invalid selections return to the main menu. Express scores all valid catalog combinations using simple preference rules. Gaming requires a dedicated GPU. Random samples valid candidates using the same purpose constraint.
 
+## Example
 
+```text
+Gaming / INR 75,000 maximum / 18% tax
+CPU          Ryzen 5 5600 (stock cooler)       11000.00
+MOTHERBOARD  AM4 / DDR4 / micro-ATX board       7000.00
+RAM          16 GB DDR4 kit                     3500.00
+GPU          GeForce RTX 4060 8 GB             30000.00
+STORAGE      1 TB SATA SSD                      5000.00
+PSU          550 W PSU                          4000.00
+CASE         micro-ATX case (fans included)     3000.00
+Subtotal: 63500.00
+Tax (18%): 11430.00
+Total: 74930.00
+Budget remaining: 70.00
+```
 
-<p align="left">  
-<h3 align="left">Connect with me:</h3>  
-<a href="https://twitter.com/Rahulsingh474" target="blank"><img align="center" src="https://img.icons8.com/doodle/48/000000/twitter--v1.png"/></a>  
-<a href="https://instagram.com/" target="blank"><img align="center" src="https://img.icons8.com/doodle/50/000000/instagram-new.png"/></a>  
-<a href="https://discord.com/channels/" target="blank"><img align="center" src="https://img.icons8.com/doodle/48/000000/discord-new-logo.png"/></a>
+## Design
+
+```text
+Console input → Builder + Catalog → PcBuild validation → Quote / CSV
+```
+
+| File | Responsibility |
+| --- | --- |
+| `Part.java` | Immutable components and categories |
+| `Catalog.java` | Sample parts and hardware attributes |
+| `PcBuild.java` | Compatibility and decimal calculations |
+| `Builder.java` | Catalog search and preference scoring |
+| `Main.java` | Console interaction and CSV export |
+| `BuildTests.java` | Regression suite |
+| `Build.java` | Portable compile/test/package command |
+
+Sources live in `src/main/java/io/github/rahulsinghparmar/pcbuild`; tests in `src/test/java/...`. The runnable JAR replaces the old `Build.MainMenu` entry point. The original implementation remains in Git history.
+
+## Limits and roadmap
+
+Validation covers attributes represented by this small catalog. Verify exact motherboard BIOS support, dimensions, connectors and vendor specifications before purchasing. Scores are preference heuristics, not FPS predictions or benchmarks. A larger catalog would need search pruning/indexing.
+
+Future work: an external versioned catalog, saved configurations/import, detailed compatibility rules and an optional desktop interface. See [release notes](CHANGELOG.md), [contributing](CONTRIBUTING.md), and [security](SECURITY.md).
+
+## License and history
+
+[MIT](LICENSE). The 2022 console coursework is the starting point; version 1.0.0 replaces its incomplete implementation. Earlier README content referenced `mr-anonymous-official/PC-Build`; that historical reference is acknowledged here without claiming an independently verified origin for every part of the old coursework. The existing copyright notice is preserved.
