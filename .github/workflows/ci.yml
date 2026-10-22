@@ -1,0 +1,29 @@
+name: Java CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        java: ['17', '21']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+      - name: Compile, test and package
+        run: java Build.java
+      - name: Smoke test runnable artifact
+        run: java -jar build/custompcbuild-1.0.0.jar --demo
+      - uses: actions/upload-artifact@v4
+        with:
+          name: custompcbuild-${{ matrix.os }}-jdk${{ matrix.java }}
+          path: build/custompcbuild-*.jar
