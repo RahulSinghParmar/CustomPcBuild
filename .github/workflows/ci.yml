@@ -23,7 +23,7 @@ jobs:
         run: java Build.java
       - name: Smoke test runnable artifact
         run: java -jar build/custompcbuild-1.0.0.jar --demo
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: custompcbuild-${{ matrix.os }}-jdk${{ matrix.java }}
           path: build/custompcbuild-*.jar
